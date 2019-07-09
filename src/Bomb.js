@@ -6,12 +6,19 @@ export default class Bomb extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      sewcondsLeft: this.props.value
+      secondsLeft: this.props.intialCount
     }
     render () {
-      return (
-        <div>I am on slide ${this.state.currentSlideIndex}</div>
-      )
+      if (this.state.secondsLeft === 0) {
+        return (
+          <div>Boom!</div>
+        )
+      }
+      else {
+        return (
+          <div>`${this.state.secondsLeft} seconds left before I go boom!`</div>
+        )
+      }
     }
   }
 }
