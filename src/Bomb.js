@@ -8,6 +8,7 @@ export default class Bomb extends Component {
     this.state = {
       secondsLeft: this.props.intialCount
     }
+  }
     render () {
       if (this.state.secondsLeft === 0) {
         return (
