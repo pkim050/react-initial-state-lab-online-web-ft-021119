@@ -17,7 +17,7 @@ export default class Bomb extends Component {
       }
       else {
         return (
-          <div>`${this.state.secondsLeft} seconds left before I go boom!`</div>
+          `${this.state.secondsLeft} seconds left before I go boom!`
         )
       }
     }
