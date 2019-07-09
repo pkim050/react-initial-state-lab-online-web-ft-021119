@@ -6,7 +6,7 @@ export default class Bomb extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      secondsLeft: this.props.intialCount
+      secondsLeft: this.props.initialCount
     }
   }
     render () {
